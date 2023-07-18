@@ -1,34 +1,248 @@
-
-
-.header_bar{
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-gap: 20px;
-    align-items: center;
+html,body {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
 }
-.head_right{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    align-items: center;
+
+.navbar a{
+    color: white;
 }
+
+.navbar {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.navbar-expand-lg .navbar-toggler {
+    display: block;
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+.nav-search {
+    margin-left: -35px;
+}
+
+.btn_btn{
+    color: white;
+    font-size: 28px;
+    background: none;
+    border: none;
+}
+
+#toggle-button{
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    padding: 0 10px;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none
+}
+
+.modal-header {
+    border-bottom: none;
+    text-align: center;
+    margin: auto;
+}
+
+.modal-menu {
+    list-style: none;
+}
+
+.modal-menu-item {
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all ease-in-out 0.3s;
+}
+
+.modal-menu-item:hover {
+    color: #ff6600;
+    cursor: pointer;
+}
+
+.fade {
+    opacity: 1;
+}
+
+.modal-open .modal {
+    background: rgb(6 3 0 / 70%);
+    transition: all 0.4s;
+}
+
+.close {
+    position: absolute;
+    overflow: hidden;
+}
+
+button.close {
+    width: 40px;
+    height: 40px;
+    right: 40px;
+    top: 40px;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    opacity: 1;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.modal-backdrop{
+    z-index: 0;
+}
+
+.search{
+    position: relative;
+}
+
+.search_input{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+}
+
+.search span i{
+    position: absolute;
+    top:15px;
+    right: 10px;
+    /* line-height: 1; */
+}
+
+/* banner */
+.crs {
+    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: initial;
+    background-attachment: fixed;
+    min-height: 700px;
+    height: 700px;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+
+.crs_info h3{
+    font-size: 55px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.crs_info p{
+    color: white;
+    margin-bottom: 50px;
+}
+
+.crs button {
+    background: none;
+    border-radius: 8px;
+    padding: 15px 50px;
+    color: white;
+    border: 2px solid white;
+    transition: all 0.5s;
+    font-weight: 700;
+}
+
+.crs button:hover{
+    background: white;
+    color: #ff6600;
+}
+
+/* About us */
+.about .row h6{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico';
+}
+
+.about .col-lg-7{
+    padding-left: 70px;
+}
+
+.about .col-lg-5 h3{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.about .col-lg-7 p{
+    line-height: 30px;
+    color: rgba(22, 28, 45, 0.7);
+    font-size: 18px;
+}
+
 /* best */
 .best_icon i{
     background-color: white;
     border-radius: 10px;
-    padding: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    color: #ff6600;
+    transition: all .5s;
+}
+
+.best_deal_food a{
+    text-decoration: none;
+}
+
+.best_deal_food a{
+    color:black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.best_deals:hover i{
+    color: #ffc600;
+}
+
+.best_food:hover i{
+    color: #ffc600;
+}
+
+
+.best_left h6{
+    font-family: 'Pacifico';
+    color: white;
     font-size: 20px;
 }
 
-/* News */
-.new_item .item_img img{
-    border-radius: 15px;
-    position: relative;
+.best_left h3{
+    font-size: 40px;
+    font-weight: 600;
 }
-.new_item .item_title{
-    position: absolute;
-    bottom: 20PX;
-    left: 50px;
+
+.best_left p{
+    line-height: 30px;
+    color: white;
+    font-size: 18px;
 }
 
 .best .best_img{
@@ -36,19 +250,106 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 600px;
+
 }
 
-.food_box{
-    border: 1px solid black;
+/* News */
+.new{
+    background-color: #f7f7f7;;
+}
+.new_item .item_img img{
     border-radius: 15px;
+    position: relative;
+}
+
+.new_item{
+    cursor: pointer;
+}
+
+.new_item .item_title{
+    position: absolute;
+    bottom: 20PX;
+    left: 50px;
+    opacity: 1;
+}
+
+.new_item .item_title h4{
+    color: white;
+    font-weight: 700;
+}
+
+.new_item .item_title p{
+    color: #ffc600;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.new_item .item_img img{
+    width: 100%;
+    height: auto;
+}
+
+.new_title h6{
+    font-family: 'Pacifico';
+    color:#ff6600;
+    font-size: 20px;
+}
+
+.new_title h3{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.new_item .col-lg-4{
+    transition: all 0.5s;
+}
+
+.new_item .col-lg-4:hover{
+    opacity: 0.8;
+}
+/* food */
+.food_box{
+    border: 1px solid #eee;;
+    border-radius: 8px;
     padding: 40px;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+}
+
+.food_top{
+    margin-bottom: 20px;
 }
 
 .food_icon{
-    font-size: large;
+    font-size: 25px;
     border-radius: 14px;
-    border: 1px solid black;
-    padding: 20px;
-    margin-right: 10px;
+    margin-right: 30px;
+    text-align: center;
+    background-color:rgba(130, 115, 252, .05);
+    color: #ff6600;
+    transition: all 0.5s;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+}
+
+.food_box:hover .food_icon{
+    color: white;
+    background: #ff6600;
+}
+
+.food_info h4{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.food_info h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.food_box p{
+    color: rgba(22, 28, 45, 0.7);;
+    font-size: 18px;
+    line-height: 30px;
 }
