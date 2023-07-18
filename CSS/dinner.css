@@ -261,6 +261,7 @@ body {
 
 .blog {
   background-color: var(--background-gray);
+  padding: 80px 0;
 }
 
 .blog .card {
