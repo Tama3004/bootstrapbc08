@@ -1,253 +1,287 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- FONTAWSOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/CSS/dinner.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      <header>
-        <div class="container py-5">
-            <div class="header_bar">
-                <div class="head_logo">
-                    <h1>Diner</h1>
-                </div>
-                <div class="head_right">
-                    <input type="text">
-                    <i class="fa-regular fa-moon"></i>
-                    <i class="fa-solid fa-list"></i>
-                </div>
-            </div>
-        </div>
-      </header>
-      <!-- CRS -->
-      <section class="crs">
-        <div class="container py-5">
-            <div class="crs_info w-50">
-                <h3>The Only Thing We Love More Than Food Is You!</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, vel.</p>
-                <button>
-                    Read More
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
-            </div>
-        </div>
-      </section>
-      <!-- About US -->
-      <section class="about py-5" style="background-color: bisque;">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-5">
-                    <h6>About Us</h6>
-                    <h3>We found our creative space that is open for you.</h3>
-                </div>
-                <div class="col-lg-7">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla exercitationem id facere similique iste dolorem voluptatem distinctio, inventore ex! Dolorem commodi quisquam, architecto soluta quaerat blanditiis repellendus in officiis.</p>
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quisquam temporibus nisi soluta quaerat. Corporis eligendi omnis itaque aliquam illum quasi ratione quia ad hic.</p>
+
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- FONTAWSOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="/CSS/dinner.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <header>
+            <div class="container py-5">
+                <div class="header_bar">
+                    <div class="head_logo">
+                        <h1>Diner</h1>
+                    </div>
+                    <div class="head_right">
+                        <input type="text">
+                        <button id="toggle-button" onclick="toggleMode()">
+                            <span>
+                                <i class="fa-regular fa-moon"></i>
+                            </span>
+                        </button>
+                        <button class="btn btn-secondary">
+                            <span>
+                                <i class="fa-solid fa-list"></i>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-      </section>
-      <!-- BEST -->
-      <section class="best">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="best_img col-lg-6">
+        </header>
+        <!-- CRS -->
+        <section class="crs">
+            <div class="container py-5">
+                <div class="crs_info w-50">
+                    <h3>The Only Thing We Love More Than Food Is You!</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, vel.</p>
+                    <button>
+                        Read More
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
                 </div>
-                <div class="col-lg-6 px-lg-5 py-5" style="background-color:#ff6900 ;">
-                    <div class="best_left p-4">
-                        <h6>More than 3000 Restaurants</h6>
-                        <h3>Book a table easly at the best price</h3>
-                        <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.</p>
-                        <div class="best_deal_food row mt-5">
-                            <div class="best_deals col">
-                                <div class="best_icon mb-4">
-                                    <i class="fa-solid fa-thumbs-up"></i>
+            </div>
+        </section>
+        <!-- About US -->
+        <section class="about py-5" style="background-color: bisque;">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h6>About Us</h6>
+                        <h3>We found our creative space that is open for you.</h3>
+                    </div>
+                    <div class="col-lg-7">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla exercitationem id
+                            facere similique iste dolorem voluptatem distinctio, inventore ex! Dolorem commodi quisquam,
+                            architecto soluta quaerat blanditiis repellendus in officiis.</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quisquam temporibus nisi
+                            soluta quaerat. Corporis eligendi omnis itaque aliquam illum quasi ratione quia ad hic.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- BEST -->
+        <section class="best">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="best_img col-lg-6">
+                    </div>
+                    <div class="col-lg-6 px-lg-5 py-5" style="background-color:#ff6900 ;">
+                        <div class="best_left p-4">
+                            <h6>More than 3000 Restaurants</h6>
+                            <h3>Book a table easly at the best price</h3>
+                            <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis.
+                                Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices
+                                in.</p>
+                            <div class="best_deal_food row mt-5">
+                                <div class="best_deals col">
+                                    <div class="best_icon mb-4">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </div>
+                                    <a href="">Best Deals</a>
+                                    <p class="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste,
+                                        ullam?</p>
                                 </div>
-                                <a href="">Best Deals</a>
-                                <p class="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, ullam?</p>
-                            </div>
-                            <div class="best_food col">
-                                <div class="best_icon mb-4">
-                                    <i class="fa-solid fa-utensils"></i>
+                                <div class="best_food col">
+                                    <div class="best_icon mb-4">
+                                        <i class="fa-solid fa-utensils"></i>
+                                    </div>
+                                    <a href="">Best Deals</a>
+                                    <p class="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste,
+                                        ullam?</p>
                                 </div>
-                                <a href="">Best Deals</a>
-                                <p class="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, ullam?</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-      </section>
-      <!-- News -->
-      <section class="new">
-        <div class="container py-5">
-            <div class="new_title text-center">
-                <h6>What's New</h6>
-                <h3>Popular Categories</h3>
-            </div>
-            <div class="new_item row">
-                <div class="col-lg-4 pt-2 mt-4">
-                    <div class="item_img w-100">
-                        <img src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/g1.jpg" class="img img-fluid" alt="">
-                    </div>
-                    <div class="item_title">
-                        <h4>Vegetarian</h4>
-                        <p>$350</p>
-                    </div>
+        </section>
+        <!-- News -->
+        <section class="new">
+            <div class="container py-5">
+                <div class="new_title text-center">
+                    <h6>What's New</h6>
+                    <h3>Popular Categories</h3>
                 </div>
-                <div class="col-lg-4 pt-2 mt-4">
-                    <div class="item_img w-100">
-                        <img src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/g1.jpg" class="img img-fluid" alt="">
-                    </div>
-                    <div class="item_title">
-                        <h4>Vegetarian</h4>
-                        <p>$350</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 pt-2 mt-4">
-                    <div class="item_img w-100">
-                        <img src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/g1.jpg" class="img img-fluid" alt="">
-                    </div>
-                    <div class="item_title">
-                        <h4>Vegetarian</h4>
-                        <p>$350</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 pt-2 mt-4">
-                    <div class="item_img w-100">
-                        <img src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/g1.jpg" class="img img-fluid" alt="">
-                    </div>
-                    <div class="item_title">
-                        <h4>Vegetarian</h4>
-                        <p>$350</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 pt-2 mt-4">
-                    <div class="item_img w-100">
-                        <img src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/g1.jpg" class="img img-fluid" alt="">
-                    </div>
-                    <div class="item_title">
-                        <h4>Vegetarian</h4>
-                        <p>$350</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 pt-2 mt-4">
-                    <div class="item_img w-100">
-                        <img src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/g1.jpg" class="img img-fluid" alt="">
-                    </div>
-                    <div class="item_title">
-                        <h4>Vegetarian</h4>
-                        <p>$350</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-      <!-- food -->
-      <section class="food">
-        <div class="container py-5">
-            <div class="food_content row ">
-                <div class="food_item col-lg-4 p-3">
-                    <div class="food_box ">
-                        <div class="food_top d-flex align-items-center ">
-                            <div class="food_icon">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <div class="food_info">
-                                <h4>01</h4>
-                                <h3>Soup</h3>
-                            </div>
+                <div class="new_item row">
+                    <div class="col-lg-4 pt-2 mt-4">
+                        <div class="item_img w-100">
+                            <img src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/g1.jpg"
+                                class="img img-fluid" alt="">
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eius!</p>
-                    </div>
-                </div>
-                <div class="food_item col-lg-4 p-3">
-                    <div class="food_box ">
-                        <div class="food_top d-flex align-items-center ">
-                            <div class="food_icon">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <div class="food_info">
-                                <h4>01</h4>
-                                <h3>Soup</h3>
-                            </div>
+                        <div class="item_title">
+                            <h4>Vegetarian</h4>
+                            <p>$350</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eius!</p>
                     </div>
-                </div>
-                <div class="food_item col-lg-4 p-3">
-                    <div class="food_box ">
-                        <div class="food_top d-flex align-items-center ">
-                            <div class="food_icon">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <div class="food_info">
-                                <h4>01</h4>
-                                <h3>Soup</h3>
-                            </div>
+                    <div class="col-lg-4 pt-2 mt-4">
+                        <div class="item_img w-100">
+                            <img src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/g1.jpg"
+                                class="img img-fluid" alt="">
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eius!</p>
+                        <div class="item_title">
+                            <h4>Vegetarian</h4>
+                            <p>$350</p>
+                        </div>
                     </div>
-                </div>
-                <div class="food_item col-lg-4 p-3">
-                    <div class="food_box ">
-                        <div class="food_top d-flex align-items-center ">
-                            <div class="food_icon">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <div class="food_info">
-                                <h4>01</h4>
-                                <h3>Soup</h3>
-                            </div>
+                    <div class="col-lg-4 pt-2 mt-4">
+                        <div class="item_img w-100">
+                            <img src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/g1.jpg"
+                                class="img img-fluid" alt="">
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eius!</p>
+                        <div class="item_title">
+                            <h4>Vegetarian</h4>
+                            <p>$350</p>
+                        </div>
                     </div>
-                </div>
-                <div class="food_item col-lg-4 p-3">
-                    <div class="food_box ">
-                        <div class="food_top d-flex align-items-center ">
-                            <div class="food_icon">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <div class="food_info">
-                                <h4>01</h4>
-                                <h3>Soup</h3>
-                            </div>
+                    <div class="col-lg-4 pt-2 mt-4">
+                        <div class="item_img w-100">
+                            <img src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/g1.jpg"
+                                class="img img-fluid" alt="">
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eius!</p>
+                        <div class="item_title">
+                            <h4>Vegetarian</h4>
+                            <p>$350</p>
+                        </div>
                     </div>
-                </div>
-                <div class="food_item col-lg-4 p-3">
-                    <div class="food_box">
-                        <div class="food_top d-flex align-items-center ">
-                            <div class="food_icon">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <div class="food_info">
-                                <h4>01</h4>
-                                <h3>Soup</h3>
-                            </div>
+                    <div class="col-lg-4 pt-2 mt-4">
+                        <div class="item_img w-100">
+                            <img src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/g1.jpg"
+                                class="img img-fluid" alt="">
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eius!</p>
+                        <div class="item_title">
+                            <h4>Vegetarian</h4>
+                            <p>$350</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt-2 mt-4">
+                        <div class="item_img w-100">
+                            <img src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/g1.jpg"
+                                class="img img-fluid" alt="">
+                        </div>
+                        <div class="item_title">
+                            <h4>Vegetarian</h4>
+                            <p>$350</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-      </section>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+        </section>
+        <!-- food -->
+        <section class="food">
+            <div class="container py-5">
+                <div class="food_content row ">
+                    <div class="food_item col-lg-4 p-3">
+                        <div class="food_box ">
+                            <div class="food_top d-flex align-items-center ">
+                                <div class="food_icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <div class="food_info">
+                                    <h4>01</h4>
+                                    <h3>Soup</h3>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eius!</p>
+                        </div>
+                    </div>
+                    <div class="food_item col-lg-4 p-3">
+                        <div class="food_box ">
+                            <div class="food_top d-flex align-items-center ">
+                                <div class="food_icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <div class="food_info">
+                                    <h4>01</h4>
+                                    <h3>Soup</h3>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eius!</p>
+                        </div>
+                    </div>
+                    <div class="food_item col-lg-4 p-3">
+                        <div class="food_box ">
+                            <div class="food_top d-flex align-items-center ">
+                                <div class="food_icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <div class="food_info">
+                                    <h4>01</h4>
+                                    <h3>Soup</h3>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eius!</p>
+                        </div>
+                    </div>
+                    <div class="food_item col-lg-4 p-3">
+                        <div class="food_box ">
+                            <div class="food_top d-flex align-items-center ">
+                                <div class="food_icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <div class="food_info">
+                                    <h4>01</h4>
+                                    <h3>Soup</h3>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eius!</p>
+                        </div>
+                    </div>
+                    <div class="food_item col-lg-4 p-3">
+                        <div class="food_box ">
+                            <div class="food_top d-flex align-items-center ">
+                                <div class="food_icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <div class="food_info">
+                                    <h4>01</h4>
+                                    <h3>Soup</h3>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eius!</p>
+                        </div>
+                    </div>
+                    <div class="food_item col-lg-4 p-3">
+                        <div class="food_box">
+                            <div class="food_top d-flex align-items-center ">
+                                <div class="food_icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <div class="food_info">
+                                    <h4>01</h4>
+                                    <h3>Soup</h3>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eius!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="./JS/main.js"></script>
+    </body>
+
 </html>

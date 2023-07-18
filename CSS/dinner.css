@@ -1,19 +1,29 @@
+.light-mode {
+    background-color: #fff;
+    color: #000;
+}
 
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
 
-.header_bar{
+.header_bar {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-gap: 20px;
     align-items: center;
 }
-.head_right{
+
+.head_right {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     align-items: center;
 }
+
 /* best */
-.best_icon i{
+.best_icon i {
     background-color: white;
     border-radius: 10px;
     padding: 20px;
@@ -21,17 +31,18 @@
 }
 
 /* News */
-.new_item .item_img img{
+.new_item .item_img img {
     border-radius: 15px;
     position: relative;
 }
-.new_item .item_title{
+
+.new_item .item_title {
     position: absolute;
     bottom: 20PX;
     left: 50px;
 }
 
-.best .best_img{
+.best .best_img {
     background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner3.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -39,13 +50,13 @@
     height: 600px;
 }
 
-.food_box{
+.food_box {
     border: 1px solid black;
     border-radius: 15px;
     padding: 40px;
 }
 
-.food_icon{
+.food_icon {
     font-size: large;
     border-radius: 14px;
     border: 1px solid black;
