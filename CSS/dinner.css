@@ -143,6 +143,10 @@ button.close {
     position: relative;
 }
 
+.crs_info{
+    margin-right: 50%;
+}
+
 .crs_info h3{
     font-size: 55px;
     color: white;
@@ -181,9 +185,6 @@ button.close {
     font-family: 'Pacifico';
 }
 
-.about .col-lg-7{
-    padding-left: 70px;
-}
 
 .about .col-lg-5 h3{
     font-size: 40px;
@@ -353,3 +354,52 @@ button.close {
     font-size: 18px;
     line-height: 30px;
 }
+
+@media screen and (max-width: 1024px) {
+    .collapse:not(.show) {
+        display: inline-flex;
+        width: auto;
+    }
+    .navbar>.container, .navbar>.container-fluid{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+      margin-top: 10px;
+      width: 1;
+    }
+    .collapse:not(.show) {
+        display: inline-flex;
+        width: auto;
+    }
+    .navbar>.container, .navbar>.container-fluid{
+        display: inline-block;
+        flex-wrap: nowrap;
+    }
+    .modal-menu{
+        padding: 0;
+    }
+    .search_input {
+        padding: 10px 30px;
+        border: none;
+        border-radius: 8px;
+    }
+    #toggle-button {
+        background: none;
+        border: none;
+        font-size: 28px;
+        color: white;
+        padding: 0 0px;
+    }
+    .crs_info{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .about .col-lg-7 {
+        margin-top: 15px;
+    }
+}
+
