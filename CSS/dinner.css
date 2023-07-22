@@ -235,25 +235,6 @@ button.close {
     font-size: 20px;
 }
 
-.best_left h3{
-    font-size: 40px;
-    font-weight: 600;
-}
-
-.best_left p{
-    line-height: 30px;
-    color: white;
-    font-size: 18px;
-}
-
-.best .best_img{
-    background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-
 /* News */
 .new{
     background-color: #f7f7f7;;
