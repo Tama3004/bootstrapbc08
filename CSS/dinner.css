@@ -451,6 +451,9 @@ button:focus {
 /* Responsive */
 
 @media screen and (max-width: 767.98px) {
+  .button {
+    padding: 10px 16px;
+  }
   .statistic {
     height: 350px;
   }
