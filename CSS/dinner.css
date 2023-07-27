@@ -220,6 +220,10 @@ button.close {
 }
 
 /* best */
+.best{
+  background-color:#ff6900;
+}
+
 .best_icon i {
   background-color: white;
   border-radius: 10px;
