@@ -13,7 +13,7 @@
 
 html,
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   padding: 0;
   margin: 0;
   background-color: #fff;
@@ -36,7 +36,7 @@ a:hover {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
 .navbar-brand {
@@ -74,7 +74,7 @@ a:hover {
 
 .modal-content {
   background-color: transparent;
-  border: none
+  border: none;
 }
 
 .modal-header {
@@ -153,7 +153,12 @@ button.close {
 
 /* banner */
 .crs {
-  background-image: linear-gradient(to right, var(--primary-color), hsl(30deg 100% 1% / 20%)), url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner1.jpg);
+  background-image: linear-gradient(
+      to right,
+      var(--primary-color),
+      hsl(30deg 100% 1% / 20%)
+    ),
+    url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner1.jpg);
   background-size: cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: initial;
@@ -204,9 +209,8 @@ button.close {
   letter-spacing: 1px;
   color: var(--primary-color);
   display: block;
-  font-family: 'Pacifico';
+  font-family: "Pacifico";
 }
-
 
 .about .col-lg-5 h3 {
   font-size: 40px;
@@ -220,8 +224,8 @@ button.close {
 }
 
 /* best */
-.best{
-  background-color:#ff6900;
+.best {
+  background-color: #ff6900;
 }
 
 .best_icon i {
@@ -233,7 +237,7 @@ button.close {
   text-align: center;
   font-size: 25px;
   color: var(--primary-color);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .best_deal_food a {
@@ -254,9 +258,8 @@ button.close {
   color: var(--secondary-color);
 }
 
-
 .best_left h6 {
-  font-family: 'Pacifico';
+  font-family: "Pacifico";
   color: white;
   font-size: 20px;
 }
@@ -277,13 +280,11 @@ button.close {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
 }
 
 /* News */
 .new {
   background-color: #f7f7f7;
-  ;
 }
 
 .new_item .item_img img {
@@ -297,7 +298,7 @@ button.close {
 
 .new_item .item_title {
   position: absolute;
-  bottom: 20PX;
+  bottom: 20px;
   left: 50px;
   opacity: 1;
 }
@@ -320,7 +321,7 @@ button.close {
 }
 
 .new_title h6 {
-  font-family: 'Pacifico';
+  font-family: "Pacifico";
   color: var(--primary-color);
   font-size: 20px;
 }
@@ -341,7 +342,6 @@ button.close {
 /* food */
 .food_box {
   border: 1px solid #eee;
-  ;
   border-radius: 8px;
   padding: 40px;
   box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
@@ -356,7 +356,7 @@ button.close {
   border-radius: 14px;
   margin-right: 30px;
   text-align: center;
-  background-color: rgba(130, 115, 252, .05);
+  background-color: rgba(130, 115, 252, 0.05);
   color: var(--primary-color);
   transition: all 0.5s;
   width: 70px;
@@ -381,7 +381,6 @@ button.close {
 
 .food_box p {
   color: rgba(22, 28, 45, 0.7);
-  ;
   font-size: 18px;
   line-height: 30px;
 }
@@ -392,8 +391,8 @@ button.close {
     width: auto;
   }
 
-  .navbar>.container,
-  .navbar>.container-fluid {
+  .navbar > .container,
+  .navbar > .container-fluid {
     display: flex;
     flex-wrap: nowrap;
   }
@@ -410,8 +409,8 @@ button.close {
     width: auto;
   }
 
-  .navbar>.container,
-  .navbar>.container-fluid {
+  .navbar > .container,
+  .navbar > .container-fluid {
     display: inline-block;
     flex-wrap: nowrap;
   }
@@ -533,8 +532,6 @@ button.close {
   width: 100%;
   z-index: 2;
 }
-
-.stats_content {}
 
 .stats_item {
   padding: 30px 20px;
@@ -823,11 +820,7 @@ button:focus {
 
 /* Responsive */
 
-@media screen and (max-width: 767.98px) {
-  .button {
-    padding: 10px 16px;
-  }
-
+@media screen and (max-width: 1023.98px) {
   .statistic {
     height: 350px;
   }
@@ -836,7 +829,19 @@ button:focus {
     position: unset;
     margin-top: 40px;
   }
+  .video_popup {
+    margin-top: 260px;
+  }
+}
 
+@media screen and (max-width: 767.98px) {
+  .button {
+    padding: 16px 26px;
+  }
+
+  .statistic_stats {
+    margin-top: 80px;
+  }
   .video_popup {
     margin-top: 550px;
   }
@@ -871,7 +876,7 @@ button:focus {
 
 .dark-mode .blog {
   background-color: #222;
-  color: white
+  color: white;
 }
 
 .dark-mode .blog .card-body a {
