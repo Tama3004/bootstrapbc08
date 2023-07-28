@@ -17,6 +17,10 @@ body.dark-mode {
   --background-light: #282828;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   font-family: "Quicksand", sans-serif;
@@ -860,6 +864,20 @@ button:focus {
 .copyright a {
   text-decoration: none;
   color: var(--primary-color);
+}
+
+#scroll-top a {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 /* Responsive */
